@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Param del req HTTP GET</title>
+</head>
+<body>
+    <ul>
+        <li><a th:href="@{/variables/string/} + 'Hola Gabriel'">/variables/Hola Gabriel</a><br></li>
+        <li><a th:href="@{/variables/string/} + 'Hola Que tal'">/variables/Hola Que tal</a><br></li>
+        <li><a th:href="@{/variables/string/} + 'Hola Que tal' + '/2'">/variables/Hola Que tal/2</a><br></li>
+    </ul>
+</body>
+</html>

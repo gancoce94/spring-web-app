@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibir Param del req HTTP GET</title>
+</head>
+<body>
+    <ul>
+        <li><a th:href="@{/params/string(text='Hola Gabriel')}">/params/string?text=Hola Gabriel</a><br></li>
+        <li><a th:href="@{/params/string(text='Hola Que tal')}">/params/string?text=Hola Que tal</a><br></li>
+        <li><a th:href="@{/params/mix-params(saludo='Hola Que tal', numero=2)}">/params/mix-params?saludo=Hola Que tal&numero=2</a><br></li>
+        <li><a th:href="@{/params/mix-params-req(saludo='Hola Que tal', numero=2)}">/params/mix-params-req?saludo=Hola Que tal&numero=2</a></li>
+    </ul>
+</body>
+</html>
